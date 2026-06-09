@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Бэт-связь</title>
+  <style>
+    body { 
+      font-family: 'Courier New', Courier, monospace; 
+      background-color: #0b0c10;
+      color: #c5c6c7;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 90vh;
+    }
+
+    #login-window, #chat-window {
+      background-color: #1f2833;
+      border: 2px solid #ffcc00;
+      border-radius: 8px;
+      padding: 30px;
+      box-shadow: 0 0 20px rgba(255, 204, 0, 0.2);
+      width: 100%;
+      max-width: 500px;
+      box-sizing: border-box;
+    }
+    h2 {
+      color: #ffcc00; 
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-top: 0;
+      text-align: center;
+      text-shadow: 0 0 5px rgba(255, 204, 0, 0.5);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    #chat-form {
+      flex-direction: row;
+      margin-top: 20px;
+    }
+
+    input { 
+      background-color: #0b0c10; 
+      border: 1px solid #45f3ff;
+      color: #fff;
+      padding: 12px; 
+      font-size: 14px;
+      border-radius: 4px;
+      outline: none;
+      transition: 0.3s;
+      font-family: inherit;
+    }
+
+    input:focus {
+      border-color: #ffcc00;
+      box-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+    }
+
+    #message-input {
+      flex-grow: 1;
+    }
+
+    button { 
+      background-color: #ffcc00; 
+      color: #0b0c10;
+      border: none;
+      padding: 12px 24px; 
+      font-weight: bold;
+      font-size: 14px;
+      text-transform: uppercase;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: 0.3s;
+      font-family: inherit;
+      box-shadow: 0 4px 0 #b38f00; 
+    }
+    button:hover {
+      background-color: #ffe066;
+      box-shadow: 0 2px 0 #b38f00;
+      transform: translateY(2px);
+    }
+    button:active {
+      box-shadow: none;
+      transform: translateY(4px);
+    }
+    ul#main { 
+      list-style-type: none; 
+      padding: 15px;       
+      margin: 0;
+      background-color: #0b0c10;
+      border: 1px solid #45f3ff;
+      border-radius: 4px;
+      height: 350px;
+      overflow-y: auto;
+    }
+
+    ul#main::-webkit-scrollbar {
+      width: 8px;
+    }
+    ul#main::-webkit-scrollbar-track {
+      background: #0b0c10;
+    }
+    ul#main::-webkit-scrollbar-thumb {
+      background: #ffcc00;
+      border-radius: 4px;
+    }
+    ul#main li {
+      margin-bottom: 10px;
+      line-height: 1.4;
+      word-break: break-all;
+      border-bottom: 1px dashed rgba(69, 243, 255, 0.2); 
+      padding-bottom: 5px;
+    }
+    #login-error { 
+      color: #ff3333 !important;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 15px;
+      text-shadow: 0 0 5px rgba(255, 51, 51, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <div id="login-window">
+    <h2>Введите бэт-ник</h2>
+    <form id="login-form">
+      <input type="text" id="nickname-input" placeholder="Бэт-ник (макс. 25 бэт-символов)" required autocomplete="off">
+      <button type="submit">Войти в чат</button>
+    </form>
+    <p id="login-error" style="display: none;"></p>
+  </div>
+  <div id="chat-window" style="display: none;">
+    <h2>Бэт-связь активна</h2>
+    <ul id="main"></ul>
+    <form id="chat-form">
+      <input type="text" id="message-input" placeholder="Введите бэт-сообщение..." required autocomplete="off">
+      <button type="submit">Отправить</button>
+    </form>
+  </div>
+
+  <script src="bundle.js"></script>
+</body>
+</html>
