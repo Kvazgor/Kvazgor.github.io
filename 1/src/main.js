@@ -6,6 +6,7 @@ const params = {
     title: "Color change test",
     color: { r: 73, g: 31, b: 170 },
 };
+const ZOOM_SPEED = 0.05;
 
 window.addEventListener("load", (ev) => {
     const pane = new Pane();
@@ -115,7 +116,10 @@ export async function onStart() {
         }   
     }
     canvas.onwheel = (ev) => {
-        zoom -= 0.1;
+        if (ev.deltaY > 0 && zoom <= 10.0)
+            zoom += ZOOM_SPEED;
+        else if (ev.deltaY < 0  && zoom > 0.1)
+            zoom -= ZOOM_SPEED;
     }
     
     initGL(canvas);
