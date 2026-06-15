@@ -1,12 +1,12 @@
 import { Pane } from 'tweakpane';
 
-let timeFromStart = 0, shaderFs, shaderVs, u_colorR, u_colorG, u_colorB, u_time_location, u_width, u_zoom, u_offsety, u_height, u_offsetx, gl, startTime = new Date(), IsDown, zoom = 1.0, OffsetX = 0, OffsetY = 0, MouseOffsetY = 0, MouseOffsetX = 0, SaveOffsetX = 0, SaveOffsetY = 0;
+let pauseTime = 0, saveTimeFromStart = 0, timeFromStart = 0, shaderFs, shaderVs, u_IsPause, u_colorR, u_colorG, u_colorB, u_time_location, u_width, u_zoom, u_offsety, u_height, u_offsetx, gl, startTime = new Date(), IsDown, IsPause = 0, zoom = 1.0, OffsetX = 0, OffsetY = 0, MouseOffsetY = 0, MouseOffsetX = 0, SaveOffsetX = 0, SaveOffsetY = 0;
 const params = {
     factor: 30,
     title: "Color change test",
     color: { r: 73, g: 31, b: 170 },
 };
-const ZOOM_SPEED = 0.05;
+const ZOOM_SPEED = 0.1;
 
 window.addEventListener("load", (ev) => {
     const pane = new Pane();
@@ -59,6 +59,7 @@ function initShaders() {
     u_width = gl.getUniformLocation(program, "Width");
     u_offsetx = gl.getUniformLocation(program, "OffsetX");
     u_offsety = gl.getUniformLocation(program, "OffsetY");
+    u_IsPause = gl.getUniformLocation(program, "IsPause"); 
 }
 
 function initBuffer() {
@@ -79,14 +80,22 @@ function drawScene() {
 
     gl.enableVertexAttribArray(0);
     gl.vertexAttribPointer(0, 2, gl.FLOAT, false, 0, 0);
-    timeFromStart = (new Date() - startTime);
-    gl.uniform1f(u_time_location, timeFromStart / 1000.0);
+    if (IsPause)
+    {
+        saveTimeFromStart = timeFromStart;
+        gl.uniform1f(u_time_location, saveTimeFromStart / 1000.0);
+    }
+    else
+    {
+        timeFromStart = new Date() - startTime - pauseTime;
+        gl.uniform1f(u_time_location, timeFromStart / 1000.0);
+    }
     gl.uniform1f(u_offsetx, OffsetX);
     gl.uniform1f(u_offsety, OffsetY);
     gl.uniform1f(u_zoom, zoom);
     gl.uniform1i(u_height, gl.viewportHeight);
     gl.uniform1i(u_width, gl.viewportWidth);
-    console.log(`Color: ${params.color}`);
+    gl.uniform1i(u_IsPause, IsPause);
     gl.uniform1f(u_colorR, params.color.r / 255.0);
     gl.uniform1f(u_colorG, params.color.g / 255.0);
     gl.uniform1f(u_colorB, params.color.b / 255.0);
@@ -96,35 +105,63 @@ function drawScene() {
 
 export async function onStart() {
     let canvas = document.getElementById("webgl-canvas");
-
-        canvas.onmousedown = (ev) => {
-        MouseOffsetX = ev.x; 
-        MouseOffsetY = ev.y;       
+    window.onmousedown = (ev) => {
+        MouseOffsetX = ev.offsetX; 
+        MouseOffsetY = ev.offsetY;         
         IsDown = true;
     };
     
-    canvas.onmouseup = (ev) => {
+    window.onmouseup = (ev) => {
         SaveOffsetX = OffsetX;
         SaveOffsetY = OffsetY;
         IsDown = false;
     };
-    canvas.onmousemove = (ev) => {
+    window.onmousemove = (ev) => {
         if (IsDown)
         {
-            OffsetX = MouseOffsetX - ev.x + SaveOffsetX;
-            OffsetY = MouseOffsetY - ev.y + SaveOffsetY;
+            const dx = ev.offsetX - MouseOffsetX;
+            const dy = ev.offsetY - MouseOffsetY;
+            
+            OffsetX -= dx * (4.0 * zoom) / canvas.width;
+            OffsetY += dy * (4.0 * zoom) / canvas.height;
+            
+            MouseOffsetX = ev.offsetX;
+            MouseOffsetY = ev.offsetY;
         }   
     }
-    canvas.onwheel = (ev) => {
-        if (ev.deltaY > 0 && zoom <= 10.0)
+    window.onwheel = (ev) => 
+    {
+        const mouseX = ev.offsetX;
+        const mouseY = ev.offsetY;
+        const oldZoom = zoom;
+
+        if (ev.deltaY < 0 && zoom <= 50.0) 
             zoom += ZOOM_SPEED;
-        else if (ev.deltaY < 0  && zoom > 0.1)
+        else if (ev.deltaY > 0 && zoom > 0.1)
             zoom -= ZOOM_SPEED;
+        const ndc_x = (mouseX / canvas.width) * 2.0 - 1.0;
+        const ndc_y = -(mouseY / canvas.height) * 2.0 + 1.0;
+        const zoomFactorChange = 2.0 * (1.0 / oldZoom - 1.0 / zoom);
+
+        OffsetX += ndc_x * zoomFactorChange;
+        OffsetY += ndc_y * zoomFactorChange;
     }
-    
+    document.addEventListener("keydown", function(ev) {
+        if (ev.key === " ")
+        {
+            if (IsPause == 0)
+                IsPause = 1;
+            else
+            {
+                pauseTime = new Date() - timeFromStart - startTime;
+                console.log(`${pauseTime}`);
+                IsPause = 0;
+            }
+        }
+    })
+
     initGL(canvas);
     try {
-      
         const responseVs = await fetch("shd.vert");
         shaderVs = await responseVs.text();
 
