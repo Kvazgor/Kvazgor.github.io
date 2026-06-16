@@ -1,113 +1,390 @@
 [
-  "Бэт-компьютер: sdd подсоединился к бэт-связи",
-  "Бэт-sdd: dd",
-  "Бэт-sdd: sd",
-  "Бэт-sdd: d",
-  "Бэт-sdd: dd",
-  "Бэт-sdd: ds",
-  "Бэт-sdd: d",
-  "Бэт-sdd: d",
-  "Бэт-sdd: d",
-  "Бэт-sdd: dd",
-  "Бэт-sdd: daaa",
-  "Бэт-sdd: a",
-  "Бэт-sdd: a",
-  "Бэт-компьютер: бэт-sdd покинул бэт-чат",
-  "Бэт-компьютер: fdf подсоединился к бэт-связи",
-  "Бэт-компьютер: fdqww подсоединился к бэт-связи",
-  "Бэт-компьютер: бэт-fdqww покинул бэт-чат",
-  "Бэт-компьютер: fdqww подсоединился к бэт-связи",
-  "Бэт-компьютер: бэт-fdqww покинул бэт-чат",
-  "Бэт-компьютер: fdqww подсоединился к бэт-связи",
-  "Бэт-компьютер: бэт-fdqww покинул бэт-чат",
-  "Бэт-компьютер: fdqww подсоединился к бэт-связи",
-  "Бэт-компьютер: бэт-fdqww покинул бэт-чат",
-  "Бэт-компьютер: fdqww подсоединился к бэт-связи",
-  "Бэт-компьютер: бэт-fdqww покинул бэт-чат",
-  "Бэт-компьютер: fdqww подсоединился к бэт-связи",
-  "Бэт-компьютер: бэт-fdqww покинул бэт-чат",
-  "Бэт-компьютер: fdqww подсоединился к бэт-связи",
-  "Бэт-компьютер: бэт-fdqww покинул бэт-чат",
-  "Бэт-компьютер: fdqww подсоединился к бэт-связи",
-  "Бэт-компьютер: бэт-fdqww покинул бэт-чат",
-  "Бэт-компьютер: fdqww подсоединился к бэт-связи",
-  "Бэт-компьютер: бэт-fdqww покинул бэт-чат",
-  "Бэт-компьютер: fdqww подсоединился к бэт-связи",
-  "Бэт-компьютер: бэт-fdqww покинул бэт-чат",
-  "Бэт-компьютер: fdqww подсоединился к бэт-связи",
-  "Бэт-компьютер: бэт-fdqww покинул бэт-чат",
-  "Бэт-компьютер: fdqww подсоединился к бэт-связи",
-  "Бэт-компьютер: бэт-fdqww покинул бэт-чат",
-  "Бэт-компьютер: fdqww подсоединился к бэт-связи",
-  "Бэт-компьютер: бэт-fdqww покинул бэт-чат",
-  "Бэт-компьютер: fdqww подсоединился к бэт-связи",
-  "Бэт-компьютер: бэт-fdqww покинул бэт-чат",
-  "Бэт-компьютер: fdqww подсоединился к бэт-связи",
-  "Бэт-компьютер: бэт-fdqww покинул бэт-чат",
-  "Бэт-компьютер: fdqww подсоединился к бэт-связи",
-  "Бэт-компьютер: бэт-fdqww покинул бэт-чат",
-  "Бэт-компьютер: fdqww подсоединился к бэт-связи",
-  "Бэт-компьютер: бэт-fdqww покинул бэт-чат",
-  "Бэт-компьютер: fdqww подсоединился к бэт-связи",
-  "Бэт-компьютер: бэт-fdqww покинул бэт-чат",
-  "Бэт-компьютер: fdqww подсоединился к бэт-связи",
-  "Бэт-компьютер: бэт-fdqww покинул бэт-чат",
-  "Бэт-компьютер: fdqww подсоединился к бэт-связи",
-  "Бэт-компьютер: бэт-fdqww покинул бэт-чат",
-  "Бэт-компьютер: fdqww подсоединился к бэт-связи",
-  "Бэт-компьютер: бэт-fdqww покинул бэт-чат",
-  "Бэт-компьютер: fdqww подсоединился к бэт-связи",
-  "Бэт-компьютер: бэт-fdqww покинул бэт-чат",
-  "Бэт-компьютер: fdqww подсоединился к бэт-связи",
-  "Бэт-компьютер: бэт-fdqww покинул бэт-чат",
-  "Бэт-компьютер: fdqww подсоединился к бэт-связи",
-  "Бэт-компьютер: бэт-fdqww покинул бэт-чат",
-  "Бэт-компьютер: fdqww подсоединился к бэт-связи",
-  "Бэт-компьютер: fdqww подсоединился к бэт-связи",
-  "Бэт-компьютер: Batman подсоединился к бэт-связи",
-  "Бэт-Batman: fgf",
-  "Бэт-Batman: ff",
-  "Бэт-Batman: f",
-  "Бэт-Batman: fd",
-  "Бэт-Batman: f",
-  "Бэт-Batman: f",
-  "Бэт-Batman: f",
-  "Бэт-Batman: f",
-  "Бэт-Batman: f",
-  "Бэт-Batman: f",
-  "Бэт-Batman: f",
-  "Бэт-Batman: f",
-  "Бэт-Batman: f",
-  "Бэт-Batman: d",
-  "Бэт-Batman: f",
-  "Бэт-Batman: fd",
-  "Бэт-Batman: df",
-  "Бэт-Batman: f",
-  "Бэт-Batman: b",
-  "Бэт-Batman: fb",
-  "Бэт-Batman: bd",
-  "Бэт-Batman: dd",
-  "Бэт-Batman: d",
-  "Бэт-Batman: d",
-  "Бэт-Batman: dd",
-  "Бэт-Batman: d",
-  "Бэт-Batman: d",
-  "Бэт-Batman: d",
-  "Бэт-Batman: d",
-  "Бэт-Batman: d",
-  "Бэт-Batman: d",
-  "Бэт-Batman: d",
-  "Бэт-Batman: d",
-  "Бэт-Batman: d",
-  "Бэт-Batman: d",
-  "Бэт-Batman: d",
-  "Бэт-Batman: dd",
-  "Бэт-Batman: d",
-  "Бэт-Batman: d",
-  "Бэт-Batman: d",
-  "Бэт-Batman: d",
-  "Бэт-Batman: d",
-  "Бэт-Batman: d",
-  "Бэт-Batman: d",
-  "Бэт-компьютер: batman подсоединился к бэт-связи"
+  {
+    "senderId": "WuFOzLcXDCy54QJzAAAV",
+    "fullmsg": "Бэт-batman: fsdfs"
+  },
+  {
+    "senderId": "WuFOzLcXDCy54QJzAAAV",
+    "fullmsg": "Бэт-batman: sf"
+  },
+  {
+    "senderId": "WuFOzLcXDCy54QJzAAAV",
+    "fullmsg": "Бэт-batman: ss"
+  },
+  {
+    "senderId": "WuFOzLcXDCy54QJzAAAV",
+    "fullmsg": "Бэт-batman: fs"
+  },
+  {
+    "senderId": "WuFOzLcXDCy54QJzAAAV",
+    "fullmsg": "Бэт-batman: ff"
+  },
+  {
+    "senderId": "WuFOzLcXDCy54QJzAAAV",
+    "fullmsg": "Бэт-batman: f"
+  },
+  {
+    "senderId": "WuFOzLcXDCy54QJzAAAV",
+    "fullmsg": "Бэт-batman: f"
+  },
+  {
+    "senderId": "WuFOzLcXDCy54QJzAAAV",
+    "fullmsg": "Бэт-batman: s"
+  },
+  {
+    "senderId": "WuFOzLcXDCy54QJzAAAV",
+    "fullmsg": "Бэт-batman: fs"
+  },
+  {
+    "senderId": "WuFOzLcXDCy54QJzAAAV",
+    "fullmsg": "Бэт-batman: s"
+  },
+  {
+    "senderId": "WuFOzLcXDCy54QJzAAAV",
+    "fullmsg": "Бэт-batman: sf"
+  },
+  {
+    "senderId": "WuFOzLcXDCy54QJzAAAV",
+    "fullmsg": "Бэт-batman: fsfs"
+  },
+  {
+    "senderId": "WuFOzLcXDCy54QJzAAAV",
+    "fullmsg": "Бэт-batman: f"
+  },
+  {
+    "senderId": "WuFOzLcXDCy54QJzAAAV",
+    "fullmsg": "Бэт-batman: sf"
+  },
+  {
+    "senderId": "WuFOzLcXDCy54QJzAAAV",
+    "fullmsg": "Бэт-batman: s"
+  },
+  {
+    "senderId": "WuFOzLcXDCy54QJzAAAV",
+    "fullmsg": "Бэт-batman: s"
+  },
+  {
+    "senderId": "WuFOzLcXDCy54QJzAAAV",
+    "fullmsg": "Бэт-batman: ff"
+  },
+  {
+    "senderId": "WuFOzLcXDCy54QJzAAAV",
+    "fullmsg": "Бэт-batman: f"
+  },
+  {
+    "senderId": "WuFOzLcXDCy54QJzAAAV",
+    "fullmsg": "Бэт-batman: sfsf"
+  },
+  {
+    "senderId": "Q0KaZjnFMDjHTYzEAAAX",
+    "fullmsg": "Бэт-batman: wfwf"
+  },
+  {
+    "senderId": "Q0KaZjnFMDjHTYzEAAAX",
+    "fullmsg": "Бэт-batman: wfwfww"
+  },
+  {
+    "senderId": "Q0KaZjnFMDjHTYzEAAAX",
+    "fullmsg": "Бэт-batman: w"
+  },
+  {
+    "senderId": "Q0KaZjnFMDjHTYzEAAAX",
+    "fullmsg": "Бэт-batman: w"
+  },
+  {
+    "senderId": "Q0KaZjnFMDjHTYzEAAAX",
+    "fullmsg": "Бэт-batman: w"
+  },
+  {
+    "senderId": "Q0KaZjnFMDjHTYzEAAAX",
+    "fullmsg": "Бэт-batman: w"
+  },
+  {
+    "senderId": "Q0KaZjnFMDjHTYzEAAAX",
+    "fullmsg": "Бэт-batman: w"
+  },
+  {
+    "senderId": "Q0KaZjnFMDjHTYzEAAAX",
+    "fullmsg": "Бэт-batman: w"
+  },
+  {
+    "senderId": "Q0KaZjnFMDjHTYzEAAAX",
+    "fullmsg": "Бэт-batman: w"
+  },
+  {
+    "senderId": "Q0KaZjnFMDjHTYzEAAAX",
+    "fullmsg": "Бэт-batman: w"
+  },
+  {
+    "senderId": "Q0KaZjnFMDjHTYzEAAAX",
+    "fullmsg": "Бэт-batman: w"
+  },
+  {
+    "senderId": "Q0KaZjnFMDjHTYzEAAAX",
+    "fullmsg": "Бэт-batman: w"
+  },
+  {
+    "senderId": "Q0KaZjnFMDjHTYzEAAAX",
+    "fullmsg": "Бэт-batman: w"
+  },
+  {
+    "senderId": "Q0KaZjnFMDjHTYzEAAAX",
+    "fullmsg": "Бэт-batman: w"
+  },
+  {
+    "senderId": "Q0KaZjnFMDjHTYzEAAAX",
+    "fullmsg": "Бэт-batman: w"
+  },
+  {
+    "senderId": "Q0KaZjnFMDjHTYzEAAAX",
+    "fullmsg": "Бэт-batman: w"
+  },
+  {
+    "senderId": "Q0KaZjnFMDjHTYzEAAAX",
+    "fullmsg": "Бэт-batman: w"
+  },
+  {
+    "senderId": "Q0KaZjnFMDjHTYzEAAAX",
+    "fullmsg": "Бэт-batman: w"
+  },
+  {
+    "senderId": "Q0KaZjnFMDjHTYzEAAAX",
+    "fullmsg": "Бэт-batman: w"
+  },
+  {
+    "senderId": "Q0KaZjnFMDjHTYzEAAAX",
+    "fullmsg": "Бэт-batman: ww"
+  },
+  {
+    "senderId": "Q0KaZjnFMDjHTYzEAAAX",
+    "fullmsg": "Бэт-batman: w"
+  },
+  {
+    "senderId": "Q0KaZjnFMDjHTYzEAAAX",
+    "fullmsg": "Бэт-batman: w"
+  },
+  {
+    "senderId": "Q0KaZjnFMDjHTYzEAAAX",
+    "fullmsg": "Бэт-batman: w"
+  },
+  {
+    "senderId": "Q0KaZjnFMDjHTYzEAAAX",
+    "fullmsg": "Бэт-batman: wf"
+  },
+  {
+    "senderId": "Q0KaZjnFMDjHTYzEAAAX",
+    "fullmsg": "Бэт-batman: w"
+  },
+  {
+    "senderId": "Q0KaZjnFMDjHTYzEAAAX",
+    "fullmsg": "Бэт-batman: w"
+  },
+  {
+    "senderId": "Q0KaZjnFMDjHTYzEAAAX",
+    "fullmsg": "Бэт-batman: w"
+  },
+  {
+    "senderId": "Q0KaZjnFMDjHTYzEAAAX",
+    "fullmsg": "Бэт-batman: w"
+  },
+  {
+    "senderId": "Q0KaZjnFMDjHTYzEAAAX",
+    "fullmsg": "Бэт-batman: w"
+  },
+  {
+    "senderId": "Q0KaZjnFMDjHTYzEAAAX",
+    "fullmsg": "Бэт-batman: w"
+  },
+  {
+    "senderId": "Q0KaZjnFMDjHTYzEAAAX",
+    "fullmsg": "Бэт-batman: w"
+  },
+  {
+    "senderId": "Q0KaZjnFMDjHTYzEAAAX",
+    "fullmsg": "Бэт-batman: w"
+  },
+  {
+    "senderId": "Q0KaZjnFMDjHTYzEAAAX",
+    "fullmsg": "Бэт-batman: w"
+  },
+  {
+    "senderId": "Q0KaZjnFMDjHTYzEAAAX",
+    "fullmsg": "Бэт-batman: w"
+  },
+  {
+    "senderId": "Q0KaZjnFMDjHTYzEAAAX",
+    "fullmsg": "Бэт-batman: w"
+  },
+  {
+    "senderId": "Q0KaZjnFMDjHTYzEAAAX",
+    "fullmsg": "Бэт-batman: w"
+  },
+  {
+    "senderId": "Q0KaZjnFMDjHTYzEAAAX",
+    "fullmsg": "Бэт-batman: w"
+  },
+  {
+    "senderId": "Q0KaZjnFMDjHTYzEAAAX",
+    "fullmsg": "Бэт-batman: w"
+  },
+  {
+    "senderId": "Q0KaZjnFMDjHTYzEAAAX",
+    "fullmsg": "Бэт-batman: w"
+  },
+  {
+    "senderId": "Q0KaZjnFMDjHTYzEAAAX",
+    "fullmsg": "Бэт-batman: w"
+  },
+  {
+    "senderId": "Q0KaZjnFMDjHTYzEAAAX",
+    "fullmsg": "Бэт-batman: w"
+  },
+  {
+    "senderId": "Q0KaZjnFMDjHTYzEAAAX",
+    "fullmsg": "Бэт-batman: w"
+  },
+  {
+    "senderId": "Q0KaZjnFMDjHTYzEAAAX",
+    "fullmsg": "Бэт-batman: w"
+  },
+  {
+    "senderId": "Q0KaZjnFMDjHTYzEAAAX",
+    "fullmsg": "Бэт-batman: w"
+  },
+  {
+    "senderId": "Q0KaZjnFMDjHTYzEAAAX",
+    "fullmsg": "Бэт-batman: w"
+  },
+  {
+    "senderId": "H0THDNL9MxuOr2CbAAAb",
+    "fullmsg": "Бэт-йцац: цацц"
+  },
+  {
+    "senderId": "H0THDNL9MxuOr2CbAAAb",
+    "fullmsg": "Бэт-йцац: ц"
+  },
+  {
+    "senderId": "H0THDNL9MxuOr2CbAAAb",
+    "fullmsg": "Бэт-йцац: ц"
+  },
+  {
+    "senderId": "H0THDNL9MxuOr2CbAAAb",
+    "fullmsg": "Бэт-йцац: ц"
+  },
+  {
+    "senderId": "H0THDNL9MxuOr2CbAAAb",
+    "fullmsg": "Бэт-йцац: ц"
+  },
+  {
+    "senderId": "H0THDNL9MxuOr2CbAAAb",
+    "fullmsg": "Бэт-йцац: ц"
+  },
+  {
+    "senderId": "rqFFyrzzZsk0gpnoAAAo",
+    "fullmsg": "Бэт-wfqw: wfw"
+  },
+  {
+    "senderId": "yosvRt0auUYbD4vHAAAB",
+    "fullmsg": "Бэт-gsdgsdgdg: wfqwf"
+  },
+  {
+    "senderId": "S9fKea842Sv2GL6LAAAD",
+    "fullmsg": "Бэт-gsdgsdgdg: qwf"
+  },
+  {
+    "senderId": "S9fKea842Sv2GL6LAAAD",
+    "fullmsg": "Бэт-gsdgsdgdg: wf"
+  },
+  {
+    "senderId": "S9fKea842Sv2GL6LAAAD",
+    "fullmsg": "Бэт-gsdgsdgdg: w"
+  },
+  {
+    "senderId": "S9fKea842Sv2GL6LAAAD",
+    "fullmsg": "Бэт-gsdgsdgdg: wfww"
+  },
+  {
+    "senderId": "S9fKea842Sv2GL6LAAAD",
+    "fullmsg": "Бэт-gsdgsdgdg: wfwfw"
+  },
+  {
+    "senderId": "S9fKea842Sv2GL6LAAAD",
+    "fullmsg": "Бэт-gsdgsdgdg: wfw"
+  },
+  {
+    "senderId": "emHFLeZZZvV32LHNAAAF",
+    "fullmsg": "Бэт-wrwrw: wfw"
+  },
+  {
+    "senderId": "emHFLeZZZvV32LHNAAAF",
+    "fullmsg": "Бэт-wrwrw: f"
+  },
+  {
+    "senderId": "emHFLeZZZvV32LHNAAAF",
+    "fullmsg": "Бэт-wrwrw: f"
+  },
+  {
+    "senderId": "emHFLeZZZvV32LHNAAAF",
+    "fullmsg": "Бэт-wrwrw: f"
+  },
+  {
+    "senderId": "emHFLeZZZvV32LHNAAAF",
+    "fullmsg": "Бэт-wrwrw: w"
+  },
+  {
+    "senderId": "emHFLeZZZvV32LHNAAAF",
+    "fullmsg": "Бэт-wrwrw: w"
+  },
+  {
+    "senderId": "emHFLeZZZvV32LHNAAAF",
+    "fullmsg": "Бэт-wrwrw: w"
+  },
+  {
+    "senderId": "emHFLeZZZvV32LHNAAAF",
+    "fullmsg": "Бэт-wrwrw: w"
+  },
+  {
+    "senderId": "emHFLeZZZvV32LHNAAAF",
+    "fullmsg": "Бэт-wrwrw: w"
+  },
+  {
+    "senderId": "emHFLeZZZvV32LHNAAAF",
+    "fullmsg": "Бэт-wrwrw: w"
+  },
+  {
+    "senderId": "emHFLeZZZvV32LHNAAAF",
+    "fullmsg": "Бэт-wrwrw: w"
+  },
+  {
+    "senderId": "emHFLeZZZvV32LHNAAAF",
+    "fullmsg": "Бэт-wrwrw: w"
+  },
+  {
+    "senderId": "64fJOzpt3Gjqj3lRAAAJ",
+    "fullmsg": "Бэт-wrwrw: waaww"
+  },
+  {
+    "senderId": "64fJOzpt3Gjqj3lRAAAJ",
+    "fullmsg": "Бэт-wrwrw: aa"
+  },
+  {
+    "senderId": "64fJOzpt3Gjqj3lRAAAJ",
+    "fullmsg": "Бэт-wrwrw: w"
+  },
+  {
+    "senderId": "64fJOzpt3Gjqj3lRAAAJ",
+    "fullmsg": "Бэт-wrwrw: w"
+  },
+  {
+    "senderId": "64fJOzpt3Gjqj3lRAAAJ",
+    "fullmsg": "Бэт-wrwrw: aw"
+  },
+  {
+    "senderId": "64fJOzpt3Gjqj3lRAAAJ",
+    "fullmsg": "Бэт-wrwrw: aa"
+  },
+  {
+    "senderId": "64fJOzpt3Gjqj3lRAAAJ",
+    "fullmsg": "Бэт-wrwrw: a"
+  }
 ]
