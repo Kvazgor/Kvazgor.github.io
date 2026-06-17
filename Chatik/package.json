@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "@rollup/plugin-node-resolve": "^16.0.3",
     "accepts": "^2.0.0",
     "base64id": "^2.0.0",
     "basic-auth": "^2.0.1",
@@ -104,9 +105,8 @@
     "ws": "^8.20.1",
     "xmlhttprequest-ssl": "^2.1.2"
   },
-  "devDependencies": {},
   "scripts": {
-    "start": "node src/server/index.js"
+    "start": "node ./src/server/index.js"
   },
   "keywords": [],
   "author": "",

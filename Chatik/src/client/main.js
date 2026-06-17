@@ -4,7 +4,7 @@ async function main() {
     const socket = io();
     
     let mySocketId = null;
-    let isManualLogout = false; // Флаг, чтобы не показывать alert при ручном выходе
+    let isManualLogout = false;
 
     const loginWindow = document.getElementById("login-window");
     const loginForm = document.getElementById("login-form");
@@ -15,22 +15,18 @@ async function main() {
     const messagesList = document.getElementById("main");
     const chatForm = document.getElementById("chat-form");
     const messageInput = document.getElementById("message-input");
-    const logoutBtn = document.getElementById("logout-btn"); // Новая кнопка
+    const logoutBtn = document.getElementById("logout-btn");
 
     function appendMessageToDOM(msg) {
         const messageDiv = document.createElement('div');
         messageDiv.classList.add('message');
 
-        if (msg.type === 'system') {
-            messageDiv.classList.add('system-msg');
-        } else {
-            if (msg.senderId === mySocketId) {
-                messageDiv.classList.add('outgoing');
-            } else {
-                messageDiv.classList.add('incoming');
-            }
-        }
 
+        if (msg.senderId === mySocketId) {
+            messageDiv.classList.add('outgoing');
+        } else {
+            messageDiv.classList.add('incoming');
+        }
         const textDiv = document.createElement('div');
         textDiv.classList.add('message-text');
         textDiv.textContent = msg.fullmsg || msg.text; 
@@ -65,26 +61,24 @@ async function main() {
         socket.emit("loginRequest", nickname);
     });
 
-    // === ЛОГИКА КНОПКИ ВЫХОДА ===
     logoutBtn.addEventListener("click", () => {
-        isManualLogout = true; // Помечаем, что выход ручной
+        isManualLogout = true;
         localStorage.removeItem("chat_nickname");
-        messagesList.innerHTML = ""; // Очищаем чат
-        
+        messagesList.innerHTML = "";
+
         chatWindow.style.display = "none";
         loginWindow.style.display = "flex";
         nicknameInput.value = "";
         
         socket.disconnect();
-        socket.connect(); // Переподключаем, чтобы можно было войти снова
+        socket.connect();
     });
 
     socket.on("loginResult", (response) => {
       if (response.success) {
         const currentNickname = nicknameInput.value.trim();
         localStorage.setItem("chat_nickname", currentNickname);
-        mySocketId = socket.id; 
-
+        mySocketId = socket.id;
         loginWindow.style.display = "none";
         chatWindow.style.display = "flex"; 
       } else {
@@ -125,11 +119,10 @@ async function main() {
     });
 
     socket.on("disconnect", () => {
-        // Показываем alert только если связь оборвалась сама, а не по кнопке
         if (!isManualLogout) {
             alert("Бэт-связь потеряна...");
         }
-        isManualLogout = false; // Сбрасываем флаг
+        isManualLogout = false;
     });
 }
 

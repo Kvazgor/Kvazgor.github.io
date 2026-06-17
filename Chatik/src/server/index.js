@@ -16,7 +16,7 @@ app.use(express.static("dist"));
 const server = http.createServer(app);
 const io = new Server(server);
 const activeUsers = {};
-const MAX_HISTORY = 100;
+const MAX_HISTORY = 47;
 const historyFilePath = path.join(__dirname, "history.json");
 
 function saveMessage(msg){
@@ -109,9 +109,6 @@ io.on("connection", (socket) => {
         const userNickname = activeUsers[socket.id];
         if (userNickname) {
           console.log(`Client disconnected: ${userNickname} (${socket.id})`);
-          //const leaveMsg = `Бэт-компьютер: бэт-${userNickname} покинул бэт-чат`;
-          //io.emit("messageFromServer", `${leaveMsg}`);
-          //saveMessage(leaveMsg);
           delete activeUsers[socket.id];
         } else {
             console.log(`Unregistered client disconnected: ${socket.id}`);
